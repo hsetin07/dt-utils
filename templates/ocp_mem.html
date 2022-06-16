@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}OCP memory usage{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<table>
+    <tr>
+    {% for h in head %}
+        <th>{{ h }}</th>
+    {% endfor %}
+    </tr>
+    {% for v in lst %}
+        <tr>
+        {% for e in v %}
+            <td>{{ e }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

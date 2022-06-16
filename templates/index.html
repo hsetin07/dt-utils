@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}ATG Dynatrace utilities{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<ul>
+    <li>List processes requiring restart: <a href="proc_req_restart/html">html</a> <a href="proc_req_restart/csv">csv</a></li>
+    <li>List hosts and consumed host units: <a href="host_units/html">html</a> <a href="host_units/csv">csv</a></li>
+    <li>List OCP memory usage: <a href="ocp_mem/html">html</a> <a href="ocp_mem/csv">csv</a></li>
+    <li>List events: <a href="events/html">html</a> <a href="events/csv">csv</a></li>
+</ul>
+{% endblock %}
