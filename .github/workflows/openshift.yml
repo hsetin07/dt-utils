@@ -79,7 +79,7 @@ jobs:
             OPENSHIFT_TOKEN: `${{ secrets.OPENSHIFT_TOKEN }}`,
           };
 
-          const GHCR = "ghcr.io";
+          const GHCR = "docker.io";
           if (`${{ env.IMAGE_REGISTRY }}`.startsWith(GHCR)) {
             core.info(`Image registry is ${GHCR} - no registry password required`);
           }
